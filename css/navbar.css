@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(209, 209, 209);
+  }
+  .header {
+    background-color: black;
+    width: 100%;
+    padding: 0.5vw;
+    padding-right: 5vw;
+    color: white;
+    font-size: 0.25vw;
+    display: flex;
+    justify-content: end;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px; 
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px yellow,
+    0 0 82px yellow,
+    0 0 92px yellow,
+    0 0 102px yellow,
+    0 0 151px yellow;
+  }
+  .flag {
+    height: 2vh;
+    margin-right: 0.5vw;
+  }
+  .logo {
+    height: 3vw;
+    -webkit-filter: invert(0.8);
+  }
+  nav.navbar {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.803), yellow);
+  }
+
+  a.navbar-brand {
+    font-size: 1.5vw;
+    margin-left: 5rem;
+  }
+  a.nav-link {
+    margin-left: 1rem;
+    font-size: 1.15vw;
+    font-weight:bolder;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #project {
+    display: flex;
+    align-items: center;
+  }
+
+  a.nav-link.dropdown-toggle {
+    margin-left: -1rem;
+  }
+
+  ul.dropdown-menu {
+    background-color: rgba(239, 239, 239, 0.5);
+    font-family: 'Courier New', Courier, monospace; 
+  }
+
+  #aboutme {
+    margin-left: 2.5rem;
+  }
+  .boxcolor {
+    background-color: black;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+ 

@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/5.project/index.css" />
+    <style></style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("html/header.html");
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <div class="title noselect">Conway's Game of Life</div>
+      <div id="canvas"></div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+      <div class="controls noselect">
+        <div class="button">
+          <button id="start"><span>Start</span></button>
+          <button id="clear"><span>Clear</span></button>
+          <button id="random"><span>Random</span></button>
+        </div>
+        <div class="rangecontrol">
+          <i class="bi bi-speedometer2"></i
+          ><input
+            id="time"
+            type="range"
+            min="0"
+            max="100"
+            value="30"
+            title="Speed"
+            aria-label="Speed"
+          />
+          <i class="bi bi-grid-3x3"></i>
+          <input
+            id="size"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            title="Grid"
+            aria-label="Grid"
+          />
+        </div>
+      </div>
+    </div>
+    <script class="js" src="js/5.project/5.1GameOfLife/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("html/header.html");
+      });
+    </script>
+    <style>
+      .container {
+        margin: 2rem 13rem 0 13rem;
+        width:66rem;
+        padding-top: 2rem;
+        padding-left: 4rem;
+        background-color: rgba(47, 255, 252, 0.121);
+      }
+      body {
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.4)
+          ),
+          url("css/4.hobbies/img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+      }
+      #title {
+        font-size: 3rem;
+      }
+      .row {
+        margin-top: 1rem;
+        display: flex;
+      }
+      .information {
+        text-align: justify;
+        color: grey;
+        text-shadow: 2px 2px 2px rgb(172, 222, 206);
+      }
+      .row {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 12rem 12rem 12rem 12rem 12rem;
+       
+      }
+      .image {
+        height: 8rem;
+        width: 12rem;
+        margin-bottom: 1rem;
+        background-size: cover;
+        margin-right:2rem;
+        transition: transform 0.4s;
+      }
+
+      .image:hover {
+        transform: scale(1.7)
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container noselect">
+      <div id="title">Photography</div>
+      <div class="row">
+        <div class="information">
+        <div class="row">
+          <img class="image" src="css/4.hobbies/img/1.jpg" />
+          <img class="image" src="css/4.hobbies/img/2.jpg" />
+          <img class="image" src="css/4.hobbies/img/3.jpg" />
+          <img class="image" src="css/4.hobbies/img/4.jpg" />
+          <img class="image" src="css/4.hobbies/img/5.jpg" />
+          <img class="image" src="css/4.hobbies/img/6.jpg" />
+          <img class="image" src="css/4.hobbies/img/7.jpg" />
+          <img class="image" src="css/4.hobbies/img/8.jpg" />
+          <img class="image" src="css/4.hobbies/img/9.jpg" />
+          <img class="image" src="css/4.hobbies/img/10.jpg" />
+          <img class="image" src="css/4.hobbies/img/11.jpg" />
+          <img class="image" src="css/4.hobbies/img/12.jpg" />
+          <img class="image" src="css/4.hobbies/img/13.jpg" />
+          <img class="image" src="css/4.hobbies/img/14.jpg" />
+          <img class="image" src="css/4.hobbies/img/15.jpg" />
+        </div>
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelectorAll(".row img").forEach((img) => {
+        img.addEventListener("hover", () => {
+          document.querySelector(".profile img").src = img.src;
+        });
+      });
+    </script>
+  </body>
+</html>

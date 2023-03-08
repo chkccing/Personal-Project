@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header noselect">
+      <img class="flag" src="html/navbar/Flag.png" />HongKonger
+    </div>
+    <nav class="navbar navbar-expand-lg noselect">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="2.homepage.html"
+          ><img class="logo" src="html/navbar/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="aboutme"
+                aria-current="page"
+                href="3.aboutme.html"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="hobbies" href="4.album.html">Hobbies</a>
+            </li>
+            <li class="nav-item dropdown" id="project">
+              <a class="nav-link" href="5.0projectIndex.html">Project</a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="5.0projectIndex.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </a>
+
+              <ul
+                class="dropdown-menu"
+                id="dropdownMenuReference"
+                aria-labelledby="dropdownMenuReference"
+              >
+                <li>
+                  <a class="dropdown-item" href="5.1gameoflife.html"
+                    >Conway's Game of Life</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Coming Soon</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" id="contact">
+              <a class="nav-link" href="6.contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

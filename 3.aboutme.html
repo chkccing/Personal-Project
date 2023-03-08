@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("html/header.html");
+      });
+    </script>
+    <style>
+      body {
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.4)
+          ),
+          url("css/3.aboutme/img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+      }
+      .container {
+        margin: 2rem 13rem 0 13rem;
+        padding-top: 2rem;
+        padding-left: 4rem;
+        width: 69.5rem;
+        background-color: rgba(255, 47, 248, 0.347);
+      }
+      #title {
+        font-size: 3rem;
+      }
+      .row {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .information {
+        text-align: justify;
+        width: 30rem;
+        color: black;
+        text-shadow: 2px 2px 2px rgb(172, 222, 206);
+      }
+
+      .profile {
+        margin-left: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: end;
+        padding-right: 0.25rem;
+      }
+
+      .profile img {
+        height: 25rem;
+        width: 20rem;
+        object-fit: cover;
+      }
+
+      .preview {
+        display: flex;
+        margin-left: 3rem;
+        flex-direction: column;
+      }
+
+      .preview img {
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 1.25rem;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container noselect">
+      <div id="title">About Me</div>
+      <div class="row">
+        <div class="information noselect">
+          I am now studying at Tecky Academy for learning coding. To be a more
+          bargaining power worker, computer science knowledge is one of the way
+          to get a better offer in workplace.<br /><br />I worked in Banking
+          Industry for over 3years, I tried the frontline and back office role,
+          there is target sales for frontline jobs while there is office war in
+          the back office role. All works are highly competitive, some of the
+          company would rather hire the fresh graduate instead of having
+          knowledge of banking as lower pay. I wish I could be more confident
+          and easier to get a stable job after attending the course.<br /><br />I
+          have not decided to stay in the previous industry or going to have a
+          different work, I believe I could find my answer after the course is
+          completed.
+        </div>
+        <div class="profile">
+          <img src="css/3.aboutme/img/p1.jpg" />
+        </div>
+        <div class="preview">
+          <img id="img1" src="css/3.aboutme/img/p1.jpg" />
+          <img id="img2" src="css/3.aboutme/img/p2.jpg" />
+          <img id="img3" src="css/3.aboutme/img/p3.jpg" />
+          <img id="img4" src="css/3.aboutme/img/p4.jpg" />
+          <img id="img5" src="css/3.aboutme/img/p5.jpg" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelectorAll(".preview img").forEach((img) => {
+        img.addEventListener("mouseover", () => {
+          document.querySelector(".profile img").src = img.src;
+        });
+      });
+    </script>
+  </body>
+</html>
